@@ -6,7 +6,7 @@ In this example with yaml conf we create 2 SCP policies: _dev_control_access_ an
 
 ```terraform
 module "aws_organization" {
-  source  = "tminaorg/aws-organization/aws"
+  source  = "voidsolutionsorg/aws-organization/aws"
   version = "1.0.0"
 
   # variables are configured via yaml files inside "conf" folder
@@ -76,7 +76,7 @@ In this example with standard tf variables we create 2 SCP policies: _dev_contro
 
 ```terraform
 module "aws_organization" {
-  source                        = "tminaorg/aws-organization/aws"
+  source                        = "voidsolutionsorg/aws-organization/aws"
   version                       = "1.0.0"
   feature_set                   = "ALL"
   aws_service_access_principals = ["sso.amazonaws.com"]
@@ -155,14 +155,14 @@ module "aws_organization" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.65 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.65 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
 
 ## Modules
 
@@ -211,7 +211,9 @@ No modules.
 
 ## Authors
 
-Module is maintained by [Nikola Kolovic](https://github.com/nikolakolovic) and [Aleksa Siriški](https://github.com/aleksasiriski) with help from [CyberLab Team](https://github.com/cyberlabrs).
+Module is maintained by [Aleksa Siriški](https://github.com/aleksasiriski) with help from the [VoidSolutions team](https://github.com/voidsolutionsorg).
+
+Module was originally made by [Nikola Kolović](https://github.com/nikolakolovic) with help from the [CyberLab team](https://github.com/cyberlabrs).
 
 ## License
 
