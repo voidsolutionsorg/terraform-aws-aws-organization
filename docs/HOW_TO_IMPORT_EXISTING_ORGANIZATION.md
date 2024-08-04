@@ -8,7 +8,7 @@ Example of module inputs (we assume that you have set up the backend and the pro
 
 ```terraform
 module "aws_organization" {
-  source  = "tminaorg/aws-organization/aws"
+  source  = "voidsolutionsorg/aws-organization/aws"
   version = "1.0.0"
 
   feature_set                   = "ALL"
